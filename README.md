@@ -3,6 +3,16 @@ learn-react
 
 Learn React.js for *high performance* client-side JavaScript applications.
 
+## Start
+
+- Getting started: http://facebook.github.io/react/docs/getting-started.html
+(recommends using [JSX](http://jsx.github.io) which is quite bleeding-edge)
+- Tutorial: http://facebook.github.io/react/docs/tutorial.html
+
+> going to have to come back to this...
+> first impression: don't like how html mixed in JS code.
+> would prefer clearer separation (i.e. templates!)
+
 ## Background
 
 ### Reading

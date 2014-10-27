@@ -36,6 +36,9 @@ react.min.js (minified!) is ***124kb***!
 see: http://facebook.github.io/react/downloads.html
 specifically: http://fb.me/react-0.11.2.min.js
 
+### Resources
+
+- Great list of React.js resources: https://github.com/enaqx/awesome-react
 
 ### Components not Templates
 

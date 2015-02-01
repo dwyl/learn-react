@@ -40,3 +40,7 @@ specifically: http://fb.me/react-0.11.2.min.js
 ### Components not Templates
 
 > http://css-tricks.com/modular-future-web-components
+
+### Server-Side Rendering
+
+> https://www.npmjs.com/package/react-server-example

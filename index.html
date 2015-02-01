@@ -3,6 +3,7 @@
 <head>
   <meta charset=utf-9>
   <title>First Component</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,18 +16,40 @@
     /** @jsx React.DOM */
 
     var MessageBox = React.createClass({
+      getInitialState: function() {
+        return {
+          isVisible: true,
+          titleMessage: 'Ciao Mundo!'
+        }
+      },
+
       render: function() {
+
+        var inlineStyles = {
+          display: this.state.isVisible ? 'block' : 'none'
+        };
+
         return (
-          <h1>Hello, World</h1>
+          <div className="container jumbotron" style={inlineStyles}>
+            <h2>{this.state.titleMessage}</h2>
+          </div>
         );
       }
     });
 
-    React.renderComponent(
+    // var SubMessage = React.createClass({
+    //   render: function() {
+    //     return (
+    //       <small>Its good to see you </small>
+    //     )
+    //   }
+    // });
+
+    React.render(
       <MessageBox />,
       document.getElementById('app'),
-      function () {
-        console.log('hai after render');
+      function after() {
+        console.log('hai after render!');
       }
     )
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-9>
+  <title>First Component</title>
+</head>
+<body>
+
+  <!-- container node -->
+  <div id="app"></div>
+
+  <script src="http://fb.me/react-0.12.2.js"></script>
+  <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+  <script type="text/jsx">
+    /** @jsx React.DOM */
+
+    var MessageBox = React.createClass({
+      render: function() {
+        return (
+          <h1>Hello, World</h1>
+        );
+      }
+    });
+
+    React.renderComponent(
+      <MessageBox />,
+      document.getElementById('app'),
+      function () {
+        console.log('hai after render');
+      }
+    )
+
+  </script>
+</body>
+</html>

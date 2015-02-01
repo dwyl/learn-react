@@ -1,5 +1,4 @@
-learn-react
-===========
+![React Intro](http://i.imgur.com/yH3JkIH.png)
 
 Learn React.js for *high performance* client-side JavaScript applications.
 
@@ -28,6 +27,7 @@ Learn React.js for *high performance* client-side JavaScript applications.
 - *High performance* functional programming with **React** *and* **Meteor**:
 https://www.youtube.com/watch?v=qqVbr_LaCIo
 - React's Architecture: https://www.youtube.com/watch?v=eCf5CquV_Bw
+- Getting Started with React.js: https://www.youtube.com/watch?v=6ho8aOPUYxs
 
 
 ## What?

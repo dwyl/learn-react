@@ -49,13 +49,20 @@ specifically: http://fb.me/react-0.11.2.min.js
 
 ### Server-Side Rendering
 
-> https://www.npmjs.com/package/react-server-example
++ https://www.npmjs.com/package/react-server-example
++ http://maketea.co.uk/2014/06/30/building-robust-web-apps-with-react-part-4.html
 
 
 ## Testing with JEST
 
-- http://facebook.github.io/jest/docs/getting-started.html
-- https://facebook.github.io/jest/docs/tutorial.html#content
++ GitHub Repo for Jest CLI: https://github.com/facebook/jest
++ Get Started: http://facebook.github.io/jest/docs/getting-started.html
++ Tutorial: https://facebook.github.io/jest/docs/tutorial.html
++ API: https://facebook.github.io/jest/docs/api.html
+
+### Test Coverage
+
++ http://stackoverflow.com/questions/28283371/how-to-get-test-coverage-from-jest-while-testing-react-js-app
 
 ## React Native
 

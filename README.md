@@ -19,6 +19,7 @@ it's easy to try it out on a small feature in an existing project.
 + **Virtual DOM:** React uses a *virtual DOM* diff implementation
 for ultra-high performance. It can also render on the server using
 Node.js — no heavy browser DOM required.
+  * This means that every time state is changed, React creates a _virtual_ DOM tree, checks for the differences between that and the existing DOM and then re-renders **only the differences** to the DOM
 + **Data flow:** React implements one-way reactive data flow which reduces
 boilerplate and is easier to reason about than traditional data binding.
 

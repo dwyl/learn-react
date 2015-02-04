@@ -1,6 +1,6 @@
 ![React Intro](http://i.imgur.com/yH3JkIH.png)
 
-Learn React.js for *high performance* client-side JavaScript applications.
+Learn React.js for *high performance* JavaScript applications.
 
 ## Start
 
@@ -8,15 +8,25 @@ Learn React.js for *high performance* client-side JavaScript applications.
 (recommends using [JSX](http://jsx.github.io) which is quite bleeding-edge)
 - Tutorial: http://facebook.github.io/react/docs/tutorial.html
 
-> going to have to come back to this...
-> first impression: don't like how html mixed in JS code.
-> would prefer clearer separation (i.e. templates!)
 
 ## Background
+
+React is a JavaScript library for building user interfaces.
+
++ **Just the UI:** Lots of people use React as the V in MVC.
+Since React makes no assumptions about the rest of your technology stack,
+it's easy to try it out on a small feature in an existing project.
++ **Virtual DOM:** React uses a *virtual DOM* diff implementation
+for ultra-high performance. It can also render on the server using
+Node.js — no heavy browser DOM required.
++ **Data flow:** React implements one-way reactive data flow which reduces
+boilerplate and is easier to reason about than traditional data binding.
+
 
 ### Reading
 
 - Main Site: http://facebook.github.io/react/
+- Getting Started: http://facebook.github.io/react/docs/getting-started.html
 - Overview (Flux): http://facebook.github.io/flux/docs/overview.html
 - GitHub: https://github.com/facebook/react
 
@@ -59,6 +69,7 @@ specifically: http://fb.me/react-0.11.2.min.js
 + Get Started: http://facebook.github.io/jest/docs/getting-started.html
 + Tutorial: https://facebook.github.io/jest/docs/tutorial.html
 + API: https://facebook.github.io/jest/docs/api.html
++ Testing Flux Apps: http://facebook.github.io/react/blog/2014/09/24/testing-flux-applications.html
 
 ### Test Coverage
 

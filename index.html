@@ -16,10 +16,17 @@
     /** @jsx React.DOM */
 
     var MessageBox = React.createClass({
+
       getInitialState: function() {
         return {
           isVisible: true,
-          titleMessage: 'Ciao Mundo!'
+          messages: [
+          'I like the world',
+          'Coffee flavored ice cream is highly underrated',
+          'My spoon is too big',
+          'Tuesday is coming. Did you bring your coat?',
+          'I am a banana'
+          ]
         }
       },
 
@@ -29,23 +36,39 @@
           display: this.state.isVisible ? 'block' : 'none'
         };
 
+        var messages = this.state.messages.map(function(message) {
+          return <SubMessage message={message} />
+        })
+
         return (
           <div className="container jumbotron" style={inlineStyles}>
-            <h2>{this.state.titleMessage}</h2>
+            <h2>Hello, World</h2>
+            { messages }
           </div>
         );
       }
     });
 
-    // var SubMessage = React.createClass({
-    //   render: function() {
-    //     return (
-    //       <small>Its good to see you </small>
-    //     )
-    //   }
-    // });
+    var SubMessage = React.createClass({
 
-    React.render(
+      propTypes: function() {
+        message: React.PropTypes.string.isRequired
+      },
+
+      getDefaultProps: function () {
+        return {
+          message: "Its good to see you"
+        }
+      },
+
+      render: function() {
+        return (
+          <div>{this.props.message}</div>
+        )
+      }
+    });
+
+    var reactComponent = React.render(
       <MessageBox />,
       document.getElementById('app'),
       function after() {

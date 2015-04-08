@@ -25,19 +25,22 @@ boilerplate and is easier to reason about than traditional data binding.
 
 ### Reading
 
-- Main Site: http://facebook.github.io/react/
-- Getting Started: http://facebook.github.io/react/docs/getting-started.html
-- Overview (Flux): http://facebook.github.io/flux/docs/overview.html
-- GitHub: https://github.com/facebook/react
++ Main Site: http://facebook.github.io/react/
++ Getting Started: http://facebook.github.io/react/docs/getting-started.html
++ Thinking in React: http://facebook.github.io/react/docs/thinking-in-react.html
++ Overview (Flux): http://facebook.github.io/flux/docs/overview.html
++ GitHub: https://github.com/facebook/react
 
 ### Video
 
-- *Introduction* to React.js: https://www.youtube.com/watch?v=XxVg_s8xAms
-- Building UIs with ReactJS: http://youtu.be/lAn7GVoGlKU?t=51s
-- *High performance* functional programming with **React** *and* **Meteor**:
++ *Introduction* to React.js: https://www.youtube.com/watch?v=XxVg_s8xAms
++ *Thinking* in React: http://tagtree.tv/thinking-in-react (click "maybe later" for video to start)
++ Main List: https://facebook.github.io/react/docs/videos.html
++ Building UIs with ReactJS: http://youtu.be/lAn7GVoGlKU?t=51s
++ *High performance* functional programming with **React** *and* **Meteor**:
 https://www.youtube.com/watch?v=qqVbr_LaCIo
-- React's Architecture: https://www.youtube.com/watch?v=eCf5CquV_Bw
-- Getting Started with React.js: ~~ https://www.youtube.com/watch?v=6ho8aOPUYxs ~~
++ React's Architecture: https://www.youtube.com/watch?v=eCf5CquV_Bw
++ Getting Started with React.js: ~~ https://www.youtube.com/watch?v=6ho8aOPUYxs ~~
 http://code.tutsplus.com/courses/getting-started-with-reactjs
 (I Paid the $15 for the course - let me know if you need access)
 

@@ -17,6 +17,15 @@
 
     var MessageBox = React.createClass({
 
+      handleAdd: function(e){
+        console.log(this); 
+        var newMessage = this.refs.newMessage.getDOMNode().value;
+        var newMessages = this.state.messages.concat([newMessage]);
+        this.setState({
+          messages: newMessages
+        });
+      },
+
       getInitialState: function() {
         return {
           isVisible: true,
@@ -43,6 +52,8 @@
         return (
           <div className="container jumbotron" style={inlineStyles}>
             <h2>Hello, World</h2>
+            <input ref="newMessage" type="text" />
+            <button className="btn btn-primary" onClick={this.handleAdd}>Add</button>
             { messages }
           </div>
         );
@@ -50,6 +61,9 @@
     });
 
     var SubMessage = React.createClass({
+      handleDelete: function(e) {
+
+      },
 
       propTypes: function() {
         message: React.PropTypes.string.isRequired

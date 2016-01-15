@@ -2,15 +2,38 @@
 
 Learn React.js for *high performance* JavaScript applications.
 
-## Start
+
+## Why?
+
+Deciding which framework/library to adopt for your Web App can be
+a *daunting* task. There are *litterally* hundreds of of
+Frameworks available
+
+
+
+
+We had a few criteria for choosing a
+
+## *What*?
+
 
 
 ### Videos:
 
-Introduction to React.js (**2 hours**)
+#### Intro to React
+
+Introduction to React.js (**2 hours**) - A good history lesson of why *Facebook* built React.
 [![Introduction to React.js](https://cloud.githubusercontent.com/assets/194400/12367017/f114d87a-bbd6-11e5-9e7d-2510aa66ca57.png)](https://youtu.be/XxVg_s8xAms "Introduction to React.js")
 
-Good history lesson.
+#### Hot Reloading with Time Travel
+
+If you have built web apps and felt the pain of having to
+re-start each time a change is made you will identify with this:
+
+[![Live React: Hot Reloading with Time Travel](https://cloud.githubusercontent.com/assets/194400/12371630/f7c3c758-bc30-11e5-949a-7b8c9f957269.png)](https://youtu.be/xsSnOQynTHs "Live React: Hot Reloading with Time Travel")
+
+
+#### Rethinking Best Practice
 
 **Pete Hunt**'s ***React: Rethinking Best Practices***
 gives a good (*although biased*) overview of how React is different:
@@ -114,22 +137,35 @@ https://www.pandastrike.com/posts/20150311-react-bad-idea
 + Thinking in React, a step by step screencast tutorial:
 https://youtu.be/mFEoarLnnqM + http://tagtree.tv/thinking-in-react
 (*note: uses older version of React...*)
++ WebPack Started for Designers:
+https://github.com/ArmendGashi/Webpack-starter-for-designers
++ React.js isn’t terrible, but it’s not perfect either:  https://medium.com/@MostlyHarmlessD/react-js-isn-t-terrible-but-it-s-not-perfect-either-8e0065cb2bf8
++ React + Performance = ? (*in-depth article about React vs. Vanilla JS perf): https://aerotwist.com/blog/react-plus-performance-equals-what/
++ ***Slant*** *Comparison* of Web UI Frameworks:
+http://www.slant.co/topics/3286/~javascript-libraries-for-building-a-ui (*Riot still beats React!*)
 
+## Good Features
+
++ Good Developer Tools & Workflow
 
 ## The Bad Parts
 
-### Inline Styles
+React was ***not*** our ***first choice*** for
+building web applications because it has *several*
+conventions which are *traditionally* considered "***anti-patterns***":
++ "in-line styles" (*in markup*)
++ "CSS in JS" (*see below*)
++ "in-line `onClick` event handlers"
++ Use of `this` context object/keyword *everywhere* (*why is this bad?*)
++ Components mix HTML/JSX Templates in JavaScript
 
-[***Inline Styles***](http://facebook.github.io/react/tips/inline-styles.html)
-Facebook *officially* recommends that people define their
-style as a JavaScript Object e.g:
-```js
-var divStyle = {
-  color: 'white',
-  backgroundImage: 'url(' + imgUrl + ')',
-  WebkitTransition: 'all', // note the capital 'W' here
-  msTransition: 'all' // 'ms' is the only lowercase vendor prefix
-};
+We *understand* and *acknowledge* that in Facebook's case
+it makes sense to include all the code (HTML/JSX, CSS & JavaScript)
+in a *single place* as a *Component*.
+When you have *many* (*tens/hundreds*) of people
+editing your app it can make sense to have everything in
+the same place.
 
-ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
-```
+We think React Components *can* (*should*) be written
+with [***accessibility***] in mind and that's where our
+example code differs from that of other tutorials.

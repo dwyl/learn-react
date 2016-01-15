@@ -4,12 +4,33 @@ Learn React.js for *high performance* JavaScript applications.
 
 ## Start
 
+
+### Videos:
+
+Introduction to React.js (**2 hours**)
+[![Introduction to React.js](https://cloud.githubusercontent.com/assets/194400/12367017/f114d87a-bbd6-11e5-9e7d-2510aa66ca57.png)](https://youtu.be/XxVg_s8xAms "Introduction to React.js")
+
+Good history lesson.
+
+**Pete Hunt**'s ***React: Rethinking Best Practices***
+gives a good (*although biased*) overview of how React is different:
+[![Pete Hunt: React: Rethinking best practices -- JSConf EU 2013](https://cloud.githubusercontent.com/assets/194400/12365803/050e1ff6-bbcf-11e5-8f27-80884b7530c4.png)](https://youtu.be/x7cQ3mrcKaY "Pete Hunt: React: Rethinking best practices -- JSConf EU 2013")
+
+#### Key Takeaways:
+
++ ***Components***, not Templates
++ Re-render, ***don't mutate***
++ **Virtual DOM** is *simple* and *fast*
+
+
+### Reading:
+
 - Getting started: http://facebook.github.io/react/docs/getting-started.html
 (recommends using [JSX](http://jsx.github.io) which is quite bleeding-edge)
 - Tutorial: http://facebook.github.io/react/docs/tutorial.html
 
 
-## Background
+## Overview
 
 React is a JavaScript library for building user interfaces.
 
@@ -34,7 +55,7 @@ boilerplate and is easier to reason about than traditional data binding.
 
 ### Video
 
-+ *Introduction* to React.js: https://www.youtube.com/watch?v=XxVg_s8xAms
++ *Introduction* to React.js: https://www.youtube.com/watch?v=XxVg_s8xAms (*linked to above*)
 + *Thinking* in React: http://tagtree.tv/thinking-in-react (click "maybe later" for video to start)
 + Main List: https://facebook.github.io/react/docs/videos.html
 + Building UIs with ReactJS: http://youtu.be/lAn7GVoGlKU?t=51s
@@ -82,3 +103,33 @@ specifically: http://fb.me/react-0.11.2.min.js
 ## React Native
 
 - React.js Conf 2015 Keynote: http://youtu.be/KVZ-P-ZI6W4
+
+
+## Background Reading
+
++ React vs. Web Components (Polymer):
+http://programmers.stackexchange.com/questions/225400/pros-and-cons-of-facebooks-react-vs-web-components-polymer
++ "***React Is A Terrible Idea***":
+https://www.pandastrike.com/posts/20150311-react-bad-idea
++ Thinking in React, a step by step screencast tutorial:
+https://youtu.be/mFEoarLnnqM + http://tagtree.tv/thinking-in-react
+(*note: uses older version of React...*)
+
+
+## The Bad Parts
+
+### Inline Styles
+
+[***Inline Styles***](http://facebook.github.io/react/tips/inline-styles.html)
+Facebook *officially* recommends that people define their
+style as a JavaScript Object e.g:
+```js
+var divStyle = {
+  color: 'white',
+  backgroundImage: 'url(' + imgUrl + ')',
+  WebkitTransition: 'all', // note the capital 'W' here
+  msTransition: 'all' // 'ms' is the only lowercase vendor prefix
+};
+
+ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
+```

@@ -169,3 +169,24 @@ the same place.
 We think React Components *can* (*should*) be written
 with [***accessibility***] in mind and that's where our
 example code differs from that of other tutorials.
+
+### Inline Styles
+
+[***Inline Styles***](http://facebook.github.io/react/tips/inline-styles.html)
+Facebook *officially* recommends that people define their
+style as a JavaScript Object e.g:
+```js
+var divStyle = {
+  color: 'white',
+  backgroundImage: 'url(' + imgUrl + ')',
+  WebkitTransition: 'all', // note the capital 'W' here
+  msTransition: 'all' // 'ms' is the only lowercase vendor prefix
+};
+
+ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
+```
+![react-css-in-js](https://cloud.githubusercontent.com/assets/194400/12389043/5fea3058-bdce-11e5-97ab-d412bc4a40ef.png)
+
+> Read: ***Please, Please Don’t Use “CSS in JS***” *by* [Alex Sharp](https://github.com/ajsharp):
+https://medium.com/@ajsharp/please-please-don-t-use-css-in-js-ffeae26f20f
+> and: https://speakerdeck.com/vjeux/react-css-in-js

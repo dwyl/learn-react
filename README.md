@@ -160,7 +160,9 @@ http://www.slant.co/topics/3286/~javascript-libraries-for-building-a-ui (*Riot s
 ## The Bad Parts
 
 React was ***not*** our ***first choice*** for
-building web applications because it has *several*
+building web applications because it is not built around the
+**Web Components** ***Standard*** (*the way Polymer is...*)
+and has *several*
 conventions which are *traditionally* considered "***anti-patterns***":
 + "in-line styles" (*in markup*)
 + "CSS in JS" (*see below*)
@@ -178,6 +180,7 @@ the same place.
 We think React Components *can* (*should*) be written
 with [***accessibility***] in mind and that's where our
 example code differs from that of other tutorials.
+
 
 ### Inline Styles
 
@@ -199,3 +202,13 @@ ReactDOM.render(<div style={divStyle}>Hello World!</div>, mountNode);
 > Read: ***Please, Please Don’t Use “CSS in JS***” *by* [Alex Sharp](https://github.com/ajsharp):
 https://medium.com/@ajsharp/please-please-don-t-use-css-in-js-ffeae26f20f
 > and: https://speakerdeck.com/vjeux/react-css-in-js
+
+### tl;dr
+
+We consider React to be a "*temporary solution*" to the
+problem of building re-useable web components that can be
+rendered on the Server and (*Progressively*) Enhanced on the Client.
+We *expect* a new *Standards-based* Approach to emerge in the
+next 18 months and will adopt it with open arms...
+(*if you know where such a framework/library/pattern is
+  being developed please share a link with us!*)

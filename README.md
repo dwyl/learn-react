@@ -125,8 +125,17 @@ specifically: http://fb.me/react-0.11.2.min.js
 
 ## React Native
 
-- React.js Conf 2015 Keynote: http://youtu.be/KVZ-P-ZI6W4
+React Native enables you to build on native platforms using a consistent developer experience based on JavaScript and React.
 
++ React.js Conf 2015 Keynote: http://youtu.be/KVZ-P-ZI6W4
++ https://facebook.github.io/react-native/
++ Things I wish I were Told About React Native: http://ruoyusun.com/2015/11/01/things-i-wish-i-were-told-about-react-native.html
+
+> Tip: *Ask* [Niki](https://github.com/nikhilaravi),
+[Jack](https://github.com/jrans),
+[Bes](https://github.com/besarthoxhaj)
+& [Izaak](https://github.com/izaakrogan) about their
+*experience* using React Native to *ship* their first ***iOS App***!
 
 ## Background Reading
 

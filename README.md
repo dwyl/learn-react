@@ -4,9 +4,9 @@ Learn React.js for *high performance* JavaScript applications.
 
 ## Start
 
-- Getting started: http://facebook.github.io/react/docs/getting-started.html
+- [Getting started](https://reactjs.org/docs/getting-started.html)
 (recommends using [JSX](http://jsx.github.io) which is quite bleeding-edge)
-- Tutorial: http://facebook.github.io/react/docs/tutorial.html
+- [Tutorial](https://reactjs.org/tutorial/tutorial.html)
 
 
 ## Background
@@ -26,11 +26,11 @@ boilerplate and is easier to reason about than traditional data binding.
 
 ### Reading
 
-+ Main Site: http://facebook.github.io/react/
-+ Getting Started: http://facebook.github.io/react/docs/getting-started.html
-+ Thinking in React: http://facebook.github.io/react/docs/thinking-in-react.html
-+ Overview (Flux): http://facebook.github.io/flux/docs/overview.html
-+ GitHub: https://github.com/facebook/react
++ [Main Site](https://reactjs.org/)
++ [Getting started](https://reactjs.org/docs/getting-started.html)
++ [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
++ [Overview (Flux)](http://facebook.github.io/flux/docs/overview)
++ [GitHub](https://github.com/facebook/react)
 
 ### Video
 
@@ -49,9 +49,9 @@ http://code.tutsplus.com/courses/getting-started-with-reactjs
 
 ## What?
 
-react.min.js (minified!) is ***124kb***!
-see: http://facebook.github.io/react/downloads.html
-specifically: http://fb.me/react-0.11.2.min.js
+react.min.js (minified!) is ***~12kb***!
+see: https://github.com/facebook/react/
+specifically: https://unpkg.com/react@17.0.2/umd/react.production.min.js
 
 ### Resources
 
@@ -59,7 +59,7 @@ specifically: http://fb.me/react-0.11.2.min.js
 
 ### Components not Templates
 
-> http://css-tricks.com/modular-future-web-components
+> https://css-tricks.com/modular-future-web-components/
 
 ### Server-Side Rendering
 
@@ -70,10 +70,9 @@ specifically: http://fb.me/react-0.11.2.min.js
 ## Testing with JEST
 
 + GitHub Repo for Jest CLI: https://github.com/facebook/jest
-+ Get Started: http://facebook.github.io/jest/docs/getting-started.html
-+ Tutorial: https://facebook.github.io/jest/docs/tutorial.html
-+ API: https://facebook.github.io/jest/docs/api.html
-+ Testing Flux Apps: http://facebook.github.io/react/blog/2014/09/24/testing-flux-applications.html
++ [Get Started](https://jestjs.io/docs/getting-started)
++ [API](https://jestjs.io/docs/api)
++ [Testing Flux Apps](https://reactjs.org/blog/2014/09/24/testing-flux-applications.html)
 
 ### Test Coverage
 

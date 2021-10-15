@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/nelsonic/learn-react",
   "dependencies": {
-    "react": "^0.12.2"
+    "react": "^17.0.2"
   }
 }

@@ -1,95 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset=utf-9>
-  <title>First Component</title>
-  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Add React in One Minute</title>
 </head>
 <body>
 
-  <!-- container node -->
-  <div id="app"></div>
+<h2>Add React in One Minute</h2>
+<p>This page demonstrates using React with no build tooling.</p>
+<p>React is loaded as a script tag.</p>
 
-  <script src="http://fb.me/react-0.12.2.js"></script>
-  <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
-  <script type="text/jsx">
-    /** @jsx React.DOM */
+<!-- We will put our React component inside this div. -->
+<div id="like_button_container"></div>
 
-    var MessageBox = React.createClass({
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
-      handleAdd: function(e){
-        console.log(this); 
-        var newMessage = this.refs.newMessage.getDOMNode().value;
-        var newMessages = this.state.messages.concat([newMessage]);
-        this.setState({
-          messages: newMessages
-        });
-      },
+<!-- Load our React component. -->
+<script src="like_button.js"></script>
 
-      getInitialState: function() {
-        return {
-          isVisible: true,
-          messages: [
-          'I like the world',
-          'Coffee flavored ice cream is highly underrated',
-          'My spoon is too big',
-          'Tuesday is coming. Did you bring your coat?',
-          'I am a banana'
-          ]
-        }
-      },
-
-      render: function() {
-
-        var inlineStyles = {
-          display: this.state.isVisible ? 'block' : 'none'
-        };
-
-        var messages = this.state.messages.map(function(message) {
-          return <SubMessage message={message} />
-        })
-
-        return (
-          <div className="container jumbotron" style={inlineStyles}>
-            <h2>Hello, World</h2>
-            <input ref="newMessage" type="text" />
-            <button className="btn btn-primary" onClick={this.handleAdd}>Add</button>
-            { messages }
-          </div>
-        );
-      }
-    });
-
-    var SubMessage = React.createClass({
-      handleDelete: function(e) {
-
-      },
-
-      propTypes: function() {
-        message: React.PropTypes.string.isRequired
-      },
-
-      getDefaultProps: function () {
-        return {
-          message: "Its good to see you"
-        }
-      },
-
-      render: function() {
-        return (
-          <div>{this.props.message}</div>
-        )
-      }
-    });
-
-    var reactComponent = React.render(
-      <MessageBox />,
-      document.getElementById('app'),
-      function after() {
-        console.log('hai after render!');
-      }
-    )
-
-  </script>
 </body>
 </html>

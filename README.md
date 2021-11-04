@@ -1,11 +1,11 @@
-![React Intro](http://i.imgur.com/yH3JkIH.png)
+![React Intro](https://i.imgur.com/yH3JkIH.png)
 
 Learn React.js for *high performance* JavaScript applications.
 
 ## Start
 
 - [Getting started](https://reactjs.org/docs/getting-started.html)
-(recommends using [JSX](http://jsx.github.io) which is quite bleeding-edge)
+(recommends using [JSX](https://jsx.github.io) which is quite bleeding-edge)
 - [Tutorial](https://reactjs.org/tutorial/tutorial.html)
 
 
@@ -29,15 +29,15 @@ boilerplate and is easier to reason about than traditional data binding.
 + [Main Site](https://reactjs.org/)
 + [Getting started](https://reactjs.org/docs/getting-started.html)
 + [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
-+ [Overview (Flux)](http://facebook.github.io/flux/docs/overview)
++ [Overview (Flux)](https://facebook.github.io/flux/docs/overview)
 + [GitHub](https://github.com/facebook/react)
 
 ### Video
 
 + *Introduction* to React.js: https://www.youtube.com/watch?v=XxVg_s8xAms
-+ *Thinking* in React: http://tagtree.tv/thinking-in-react (click "maybe later" for video to start)
++ *Thinking* in React: https://tagtree.tv/thinking-in-react (click "maybe later" for video to start)
 + Main List: https://facebook.github.io/react/docs/videos.html
-+ Building UIs with ReactJS: http://youtu.be/lAn7GVoGlKU?t=51s
++ Building UIs with ReactJS: https://youtu.be/lAn7GVoGlKU?t=51s
 + *High performance* functional programming with **React** *and* **Meteor**:
 https://www.youtube.com/watch?v=qqVbr_LaCIo
 + React's Architecture: https://www.youtube.com/watch?v=eCf5CquV_Bw
@@ -64,7 +64,7 @@ specifically: https://unpkg.com/react@17.0.2/umd/react.production.min.js
 ### Server-Side Rendering
 
 + https://www.npmjs.com/package/react-server-example
-+ http://maketea.co.uk/2014/06/30/building-robust-web-apps-with-react-part-4.html
++ https://www.matthinchliffe.dev/2014/06/30/building-robust-web-apps-with-react-part-4.html
 
 
 ## Testing with JEST
@@ -80,4 +80,4 @@ specifically: https://unpkg.com/react@17.0.2/umd/react.production.min.js
 
 ## React Native
 
-- React.js Conf 2015 Keynote: http://youtu.be/KVZ-P-ZI6W4
+- React.js Conf 2015 Keynote: https://youtu.be/KVZ-P-ZI6W4

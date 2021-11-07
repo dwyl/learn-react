@@ -41,9 +41,7 @@ boilerplate and is easier to reason about than traditional data binding.
 + *High performance* functional programming with **React** *and* **Meteor**:
 https://www.youtube.com/watch?v=qqVbr_LaCIo
 + React's Architecture: https://www.youtube.com/watch?v=eCf5CquV_Bw
-+ Getting Started with React.js: ~~ https://www.youtube.com/watch?v=6ho8aOPUYxs ~~
-http://code.tutsplus.com/courses/getting-started-with-reactjs
-(I Paid the $15 for the course - let me know if you need access)
++ React JS Crash Course: https://www.youtube.com/watch?v=w7ejDZ8SWv8
 
 
 
@@ -76,7 +74,7 @@ specifically: https://unpkg.com/react@17.0.2/umd/react.production.min.js
 
 ### Test Coverage
 
-+ http://stackoverflow.com/questions/28283371/how-to-get-test-coverage-from-jest-while-testing-react-js-app
++ https://stackoverflow.com/questions/28283371/how-to-get-test-coverage-from-jest-while-testing-react-js-app
 
 ## React Native
 
